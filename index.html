@@ -20,15 +20,19 @@
 <body>
             <header class="header">
                 <div class="container header-container">
-                    <nav class="header-nav">
                 <a class="logo-web link" href="./index.html">Web<span class="logo-studio">Studio</span></a>
+
+                <div class="menu js-menu-container">
+                <nav class="header-nav">
                     <ul class="header-list list">
                         <li class="header-list-item"><a href="./index.html" class="header-link nav--current link">Студія</a></li>
                         <li class="header-list-item"><a href="./portfolio.html" class="header-link link">Портфоліо</a></li>
                         <li class="header-list-item"><a href="#" class="header-link link">Контакти</a></li>
                     </ul>
                 </nav>
-                    <ul class="header-contacts-list list">
+
+                <div class="menu-contacts">
+     <ul class="header-contacts-list list">
                     <li class="contacts-list-item"><a href="mailto:info@devstudio.com" class="contacts-link link">
                         <svg class="icon-contact">
                             <use href="./image/icons.svg#icon-envelope"></use>
@@ -38,7 +42,30 @@
                         <svg class="icon-contact icon-smartphone">
                         <use href="./image/icons.svg#icon-smartphone"></use>
                     </svg> +38 096 111 11 11</a></li>
-                </ul>        
+                </ul> 
+
+     <ul class="menu-social">
+            <li class="menu-social__item link">
+              <a class="menu-social__link " href="./">Instagram</a>
+            </li>
+            <li class="menu-social__item">
+              <a class="menu-social__link" href="./">Twitter</a>
+            </li>
+            <li class="menu-social__item">
+              <a class="menu-social__link" href="./">Facebook</a>
+            </li>
+            <li class="menu-social__item">
+              <a class="menu-social__link" href="./">Linkedin</a>
+            </li>
+          </ul>
+                </div>
+     </div>
+    <button class="menu__button js-open-menu" data-menu-button type="button" aria-expanded="false">
+        <svg class="menu__icon" aria-label="Перемикач мобільного меню" width="40" height="40">
+            <use class="icon-cross" href="./image/icons.svg#icon-close-black"></use>
+            <use class="icon-burger" href="./image/icons.svg#icon-menu_40px"></use>
+        </svg>
+    </button>
     </div>           
     </header>
     <main>
@@ -356,6 +383,7 @@
     </div>
 </div>
 <script src="./js/modal.js"></script>
+<script src="./js/menu.js"></script>
                 </body>
                 
                 </html>
