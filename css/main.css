@@ -266,6 +266,41 @@ header {
   color: #2196F3;
 }
 
+.menu-social {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  gap: 20px;
+}
+
+.menu-social__item::after {
+  content: "";
+  width: 22px;
+  height: 0;
+  position: relative;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  transform: rotate(90deg);
+}
+
+.social-linc {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: #2196F3;
+}
+
+.menu-social__link {
+  font-size: 18;
+  line-height: 1.22;
+  text-decoration: none;
+  color: #2196F3;
+}
+
+.mob-open {
+  margin-left: auto;
+}
+
 .hero {
   background-color: #2f303a;
   padding-top: 200px;
