@@ -22,9 +22,28 @@
 .hero__section {
     display: flex;
     gap: 30px;
+    flex-wrap: wrap;
 }
 
+.hero__list {
+    @media (min-width: 768px) {
+        width: calc((100% - 30px) / 2);
+    }
 
+    @media (max-width: 767px) {
+        &:last-child {
+            margin-right: 0px;
+        }
+    }
+
+    @media (min-width: 1200px) {
+        width: calc((100% - 90px) / 4);
+
+        &:last-child {
+            margin-right: 0px;
+        }
+    }
+}
 
 .hero__title {
     font-weight: 900;

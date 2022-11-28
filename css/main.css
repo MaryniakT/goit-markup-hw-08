@@ -58,7 +58,7 @@ address {
 
 img {
   display: block;
-  min-width: 100%;
+  max-width: 100%;
   height: auto;
 }
 
@@ -77,6 +77,12 @@ img {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+@media (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
 
 body {
   font-family: "Roboto";
@@ -87,9 +93,27 @@ body {
 }
 
 .container {
-  width: 1200px;
-  padding: 0 15px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
 }
 
 .logo-web {
@@ -245,6 +269,26 @@ header {
 .hero__section {
   display: flex;
   gap: 30px;
+  flex-wrap: wrap;
+}
+
+@media (min-width: 768px) {
+  .hero__list {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media (max-width: 767px) {
+  .hero__list:last-child {
+    margin-right: 0px;
+  }
+}
+@media (min-width: 1200px) {
+  .hero__list {
+    width: calc((100% - 90px) / 4);
+  }
+  .hero__list:last-child {
+    margin-right: 0px;
+  }
 }
 
 .hero__title {
@@ -379,10 +423,21 @@ header {
 .people__section {
   display: flex;
   gap: 30px;
+  flex-wrap: wrap;
 }
 
 .people__list {
   background: #FFFFFF;
+}
+@media (min-width: 768px) {
+  .people__list {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media (min-width: 1200px) {
+  .people__list {
+    width: calc((100% - 90px) / 4);
+  }
 }
 
 .people__item {
@@ -461,12 +516,22 @@ header {
 
 .customers__list {
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
 }
 
 .customers-list__item {
-  width: calc((100% - 120px) / 6);
-  height: 92px;
+  width: calc((100% - 30px) / 2);
+}
+@media (min-width: 768px) {
+  .customers-list__item {
+    width: calc((100% - 60px) / 3);
+  }
+}
+@media (min-width: 1200px) {
+  .customers-list__item {
+    width: calc((100% - 150px) / 6);
+  }
 }
 
 .customers__link {

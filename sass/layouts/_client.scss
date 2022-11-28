@@ -13,13 +13,21 @@
 
 .customers__list {
     display: flex;
+    flex-wrap: wrap;
     gap: 30px;
 }
 
 .customers-list__item {
-    width: calc((100% - 120px) / 6);
-    height: 92px;
-}
+        width: calc((100% - 30px) / 2);
+
+        @media (min-width: 768px) {
+            width: calc((100% - 60px) / 3);
+        }
+
+        @media (min-width: 1200px) {
+            width: calc((100% - 150px) / 6);
+        }
+    }
 
 .customers__link {
     width: 100%;

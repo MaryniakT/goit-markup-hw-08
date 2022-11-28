@@ -17,10 +17,18 @@
 .people__section {
     display: flex;
     gap: 30px;
-}
+    flex-wrap: wrap;
+    }
 
 .people__list {
     background: #FFFFFF;
+    @media (min-width: 768px) {
+            width: calc((100% - 30px) / 2);
+        }
+    
+        @media (min-width: 1200px) {
+            width: calc((100% - 90px) / 4);
+        }
 }
 
 .people__item {
@@ -31,6 +39,7 @@
     letter-spacing: 0.03em;
     color: #212121;
     margin-bottom: 10px;
+    
 }
 
 .people__box {
