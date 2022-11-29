@@ -1,7 +1,11 @@
 .project {
     padding-top: 0;
-}
+display: none;
 
+    @include desktop {
+        display: block;
+    }
+}
 .project__section {
     display: flex;
     gap: 30px;
@@ -42,4 +46,17 @@
     text-transform: uppercase;
     color: #ffffff;
     background-color: rgba(47, 48, 58, 0.8);
+}
+.section-title {
+    margin-bottom: 30px;
+    font-size: 28px;
+    line-height: 1.18;
+    text-align: center;
+    color: #212121;
+
+    @include desktop {
+        margin-bottom: 50px;
+        font-size: 36px;
+        line-height: 1.17;
+    }
 }
