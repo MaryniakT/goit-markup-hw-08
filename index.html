@@ -27,7 +27,7 @@
                         <a href="./index.html" class="header-link current link">Студія</a></li>
                         <li class="header-list-item">
                     <a href="./portfolio.html"
-                                class="header-link  nav--current link">Портфоліо</a></li>
+                                class="header-link link">Портфоліо</a></li>
                         <li class="header-list-item"><a href="#" class="header-link link">Контакти</a></li>
                     </ul>
                 </nav>
@@ -179,7 +179,17 @@
                 <h2 class="people__title">Наша команда</h2>
             <ul class="people__section">
                 <li class="people__list list">
-                    <img src="./image/imgigor.jpg" alt="хлопець в окулярах, коричнева сорочка" width="270">
+                    
+                    <picture>
+                        <source srcset="./image/igor-web-1x.jpg 1x, ./image/igor-web-2x.jpg 2x" media="(min-width: 1200px)" />
+                        <source srcset="./image/igor-tab-1x.jpg 1x, ./image/igor-tab-2x.jpg 2x" media="(min-width: 768px)" />
+                        <source srcset="./image/igor-mob-1x.jpg 1x, ./image/igor-mob-2x.jpg 2x" media="(max-width: 767px)" />
+                                        
+                    <img 
+                    src="./image/imgigor.jpg" 
+                    alt="хлопець в окулярах, коричнева сорочка" 
+                    width="450">
+                    </picture>
                     <div class="people__box">
                     <h3 class="people__item">Ігор Дем'яненко</h3>
                      <p class="people__page">Product Designer</p>
@@ -201,7 +211,15 @@
                     </div>
                 </li>
                 <li class="people__list list">
-                    <img src="./image/imgolga.jpg" alt="блондинка в окулярах" width="270">
+
+                    <picture>
+                        <source srcset="./image/olga-web-1x.jpg 1x, ./image/olga-web-2x.jpg 2x" media="(min-width: 1200px)" />
+                        <source srcset="./image/olga-tab-1x.jpg 1x, ./image/olga-tab-2x.jpg 2x" media="(min-width: 768px)" />
+                        <source srcset="./image/olga-mob-1x.jpg 1x, ./image/olga-mob-2x.jpg 2x" media="(max-width: 767px)" />
+                    
+                        <img src="./image/imgolga.jpg" alt="блондинка в окулярах" width="450">
+                    </picture>
+            
                     <div class="people__box">
                     <h3 class="people__item">Ольга Рєпіна</h3>
                     <p class="people__page">Frontend Developer</p>
@@ -225,7 +243,14 @@
                     </div>
                 </li>
                 <li class="people__list list">
-                    <img src="./image/imgmykola.jpg" alt="хлопець з голубій сорочці" width="270">
+                    <picture>
+                        <source srcset="./image/mykola-web-1x.jpg 1x, ./image/mykola-web-2x.jpg 2x" media="(min-width: 1200px)" />
+                        <source srcset="./image/mykola-tab-1x.jpg 1x, ./image/mykola-tab-2x.jpg 2x" media="(min-width: 768px)" />
+                        <source srcset="./image/mykola-mob-1x.jpg 1x, ./image/mykola-mob-2x.jpg 2x" media="(max-width: 767px)" />
+                    
+                        <img src="./image/imgmykola.jpg" alt="хлопець з голубій сорочці" width="450">
+                    </picture>
+                    
                     <div class="people__box">
                     <h3 class="people__item">Микола Тарасов</h3>
                     <p class="people__page">Marketing</p>
@@ -249,7 +274,14 @@
                     </div>
                 </li>
                 <li class="people__list list">
-                    <img src="./image/imgmyx.jpg" alt="хлопець в окулярах,чорна футболка" width="270">
+                    <picture>
+                        <source srcset="./image/myhaylo-web-1x.jpg 1x, ./image/myhaylo-web-2x.jpg 2x" media="(min-width: 1200px)" />
+                        <source srcset="./image/myhaylo-tab-1x.jpg 1x, ./image/myhaylo-tab-2x.jpg 2x" media="(min-width: 768px)" />
+                        <source srcset="./image/myhaylo-mob-1x.jpg 1x, ./image/myhaylo-mob-2x.jpg 2x" media="(max-width: 767px)" />
+                    
+                    <img src="./image/imgmyx.jpg" alt="хлопець в окулярах,чорна футболка" width="450">
+                    </picture>
+                    
                     <div class="people__box">
                     <h3 class="people__item">Михайло Єрмаков</h3>
                     <p class="people__page">UI Designer</p>
@@ -302,7 +334,7 @@
     </main>
     <footer class="footer">
         <div class="container footer-wrap">
-            <div>
+            <div class="footer-box">
                 <a class="logo-web link footer-logo" href="./index.html">Web<span
                         class="logo-studio-white">Studio</span></a>
                 <address class="footer-address-list">
@@ -310,7 +342,8 @@
                         <li class="footer-list-item list"><a href="https://goo.gl/maps/NXX6LeHb5ru4royF7" target="_blank"
                                 rel="noopener noreferrer nofollow" class="footer-link link-address link">м. Київ, пр-т Лесі
                                 Українки, 26</a></li>
-                        <li class="footer-list-item list"><a href="mailto:info@devstudio.com"
+                        <li class="footer-list-item list">
+                            <a  href="mailto:info@devstudio.com"
                                 class="footer-link link">info@devstudio.com</a></li>
                         <li class="footer-list-item list"><a href="tel:+380961111111" class="footer-link link">+38 096 111
                                 11 11</a>
@@ -319,8 +352,8 @@
                 </address>
             </div>
             <div class="footer-social">
-                <p class="footer-heading">приєднуйтесь</p>
-                <ul class="social-footer-list">
+                <p class="footer-heading">Приєднуйтесь</p>
+                <ul class="social-footer-list list">
                     <li class="social-footer-item">
                         <a href="#" class="social-footer-link">
                             <svg class="social-footer-icon">
@@ -356,7 +389,7 @@
                 <form class="form-subscription">
                     <div class="send">
                         <label for="form-subscription-mail"></label>
-                        <input type="email" name="mail" id="form-subscription-mail" placeholder="E-mail" />
+                        <input class="subscribe-input" type="email" name="mail" id="form-subscription-mail" placeholder="E-mail" />
                         <button type="button" class="footer-button pointer">
                             Підписатися <span class="send-icon"><svg width="24" height="24">
                                     <use href="./image/icons.svg#icon-icon-send"></use>
