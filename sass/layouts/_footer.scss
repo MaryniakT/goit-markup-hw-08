@@ -43,17 +43,23 @@
  }
 
  .footer-logo {
-     font-family: 'Raleway', 'sans-serif';
-     font-weight: 700;
-     font-size: 24px;
-     line-height: 1.17;
-     color: #2196F3;
-     display: inline-block;
-     text-decoration: none;
-     margin-bottom: 20px;
- }
+        display: inline-block;
+        margin-bottom: 20px;
+    }
 
+.logo{
+font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.17;
+    color: #2196F3;
+    text-decoration: none;
 
+    @include desktop {
+        font-size: 26px;
+        line-height: 1.19;
+    }
+}
  .footer-social {
     margin-top: 60px;
         margin-bottom: 60px;
@@ -79,7 +85,7 @@ text-align: center;
 }
 .footer-box{
     @include tablet {
-            margin-bottom: 60px;
+            
         }
     
         @include desktop {
@@ -167,6 +173,8 @@ background-color: inherit;
 
  .footer-subscription {
      margin-left: auto;
+     margin-right: auto;
+     margin-top: 60px;
 
  }
 
@@ -184,12 +192,11 @@ font-style: normal;
     }
 }
 
- .send {
-     display: flex;
- }
+ 
 
  .send input {
-     width: 358px;
+    width: 100%;
+    max-width: 450px;
      height: 50px;
      margin: 0;
      padding: 15px 16px;
@@ -225,7 +232,8 @@ font-style: normal;
      justify-content: center;
      align-items: center;
      padding: 10px 28px;
-     margin-left: 12px;
+    //  margin-left: 12px;
+    margin-top: 20px;
      background-color: #2196f3;
      border: transparent;
      border-radius: 4px;

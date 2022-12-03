@@ -1,13 +1,15 @@
 .customers {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
+margin-bottom: 30px;
+    font-size: 28px;
+    line-height: 1.18;
     text-align: center;
-    letter-spacing: 0.03em;
-    color: #212121;
-    text-align: center;
-    margin-top: 0px;
-    margin-bottom: 50px;
+    color:#212121;
+
+    @include desktop {
+        margin-bottom: 50px;
+        font-size: 36px;
+        line-height: 1.17;
+    }
 }
 
 
@@ -19,13 +21,16 @@
 
 .customers-list__item {
         width: calc((100% - 30px) / 2);
+        height: 92px;
 
         @media (min-width: 768px) {
             width: calc((100% - 60px) / 3);
+            height: 92px;
         }
 
         @media (min-width: 1200px) {
             width: calc((100% - 150px) / 6);
+            height: 92px;
         }
     }
 
